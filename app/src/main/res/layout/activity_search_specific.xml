@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchSpecificActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="112dp"
+        android:src="@mipmap/banner"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:src="@drawable/back_arrow_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roomTitle"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="72dp"
+        android:text="Find a Room"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <TextView
+        android:id="@+id/roomSubtitle"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Selected Room Type"
+        app:layout_constraintStart_toStartOf="@+id/roomTitle"
+        app:layout_constraintTop_toBottomOf="@+id/roomTitle" />
+
+    <TextView
+        android:id="@+id/personsLabel"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Number of Persons:"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/roomSubtitle" />
+
+    <SeekBar
+        android:id="@+id/optionsSeekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:thumb="@drawable/custom_thumb"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/personsLabel" />
+
+    <TextView
+        android:id="@+id/selectedValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected: 1"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/optionsSeekBar" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select the dates::"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/selectedValueTextView" />
+
+    <Button
+        android:id="@+id/arrivalDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:text="Arrival Date"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/dateLabel" />
+
+    <Button
+        android:id="@+id/departureDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departure Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteY="317dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateLabel"
+        />
+
+    <TextView
+        android:id="@+id/checkLabel"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Check In:"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/arrivalDateButton" />
+
+    <RadioGroup
+        android:id="@+id/rgCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/roomSubtitle"
+        app:layout_constraintTop_toBottomOf="@id/checkLabel">
+            <RadioButton
+                android:id="@+id/timeSlot1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12:00" />
+
+            <RadioButton
+                android:id="@+id/timeSlot2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12:30" />
+
+            <RadioButton
+                android:id="@+id/timeSlot3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13:00" />
+
+            <RadioButton
+                android:id="@+id/timeSlot4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13:30" />
+
+            <RadioButton
+                android:id="@+id/timeSlot5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14:00" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="10dp"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

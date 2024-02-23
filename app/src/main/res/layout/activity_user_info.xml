@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity">
+
+    <TextView
+        android:id="@+id/lbTitle"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="New User"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbEmail"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbTitle" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        style="@style/edit_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/lbEmail"
+        app:layout_constraintStart_toEndOf="@+id/lbEmail"
+        android:hint="Enter an email"/>
+
+    <TextView
+        android:id="@+id/lbName"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/lbEmail"
+        app:layout_constraintTop_toBottomOf="@+id/lbEmail" />
+
+    <EditText
+        android:id="@+id/txtName"
+        style="@style/edit_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/lbName"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        android:hint="Enter a name"/>
+
+    <TextView
+        android:id="@+id/lbRole"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Role"
+        app:layout_constraintStart_toStartOf="@+id/lbName"
+        app:layout_constraintTop_toBottomOf="@+id/lbName" />
+
+    <EditText
+        android:id="@+id/txtRole"
+        style="@style/edit_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/lbRole"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        android:hint="Enter an role"/>
+
+    <TextView
+        android:id="@+id/lbPassword"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="@+id/lbRole"
+        app:layout_constraintTop_toBottomOf="@+id/lbRole" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        style="@style/edit_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/lbPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        android:hint="Enter a password"/>
+
+    <TextView
+        android:id="@+id/lbUsername"
+        style="@style/header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Username"
+        app:layout_constraintStart_toStartOf="@+id/lbPassword"
+        app:layout_constraintTop_toBottomOf="@+id/lbPassword" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        style="@style/edit_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/lbUsername"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        android:hint="Enter an username"/>
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="#88DC27"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

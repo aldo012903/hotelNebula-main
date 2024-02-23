@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "955128255215",
+    "firebase_url": "https://hotelnebula-f1e7e-default-rtdb.firebaseio.com",
+    "project_id": "hotelnebula-f1e7e",
+    "storage_bucket": "hotelnebula-f1e7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955128255215:android:a0d240f9ebba88a28cc11a",
+        "android_client_info": {
+          "package_name": "com.example.hotelnebula"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArVLfvazXSfRSTVXrJRoBvKXlJRl5re3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
